@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Site (Astrid Saxby)</title>
 </head>
 <body>
     <div>
-    <h1>Astrid Saxby</h1>
-    <picture>
-        <source srcset="img/aboutme/Namelogo.jpg" style="width:200px;height:48px;">
-        <img src="img/aboutme/Namelogo.jpg" alt="logo">
+        <picture>
+        <source srcset="img/aboutme/Namelogo.svg" style="width:200px;height:48px;">
+        <img src="img/aboutme/Namelogo.svg" alt="logo">
     </picture>  
     <nav>
     <ul>
@@ -24,7 +28,7 @@
     </div>
 <div>
     <div>
-        <h1><span>I'm Astrid Saxby a UX / UI designer</span></h1>
+        <h1 id="designer"> I'm Astrid Saxby a UX / UI designer</h1>
             <p>
                 I’m based in the NE of England. As a former teacher, and now career changer I have always had a passion for making complex ideas understandable. My designs are clear, simple and functional.
             </p>
@@ -32,21 +36,21 @@
 </div>
 <div>
     <div>
-        <h2>CIRA - Climbers’ Injury Recovery App</h2>
+        <h2 id="CIRA">CIRA - Climbers’ Injury Recovery App</h2>
             <div>
             <p>An app to help climbers quickly recover from injury</p>
             <a href="https://www.figma.com/file/thmF8MBlDfHwqVaMqTBe9T/CIRA-Notion?type=design&node-id=2416%3A1262&mode=design&t=4gk4AjNIgWpaNKD6-1">A link to the Figma prototype</a>
             </div>
             <div>
                <picture>
-                <source srcset="img/portfolio/CIRABanner600.jpg" media="(max-width:767px)">
-                <img src="img/portfolio/CIRABanner1200.jpg" alt="CIRA banner">
+                <source srcset="img/portfolio/cirabanner1200.svg" media="(max-width:767px)">
+                <img src="img/portfolio/cirabanner600.svg" alt="CIRA banner">
                </picture> 
             </div>
     </div>
 </div>
     <div>
-    <h2>Climbers' Club Hut Booking App</h2>
+    <h2 id="CC Hut Booking App">Climbers' Club Hut Booking App</h2>
         <div>
         <p>An app to allow climbers to quickly book one of 8 Climbers’ Club huts</p>
         <a href="https://www.figma.com/file/thmF8MBlDfHwqVaMqTBe9T/CIRA-Notion?type=design&node-id=2416%3A1262&mode=design&t=4gk4AjNIgWpaNKD6-1">A link to the Figma prototype</a>
@@ -66,15 +70,15 @@
             </p>
     </div>
     <div>
-        <a href="mailto:astridsaxbyplus@gmail.com">Email me</a>
+        <a href="mailto:astridsaxbyplus@gmail.com" class="button">Send Email</a>
     </div>
     <div>
         <a href="https://www.linkedin.com/in/astrid-saxby25/" target="_blank">
-            <img src="img/portfolio/icons8-linkedin.svg" alt="linkedin icon">
+            <img src="img/portfolio/icons8-linkedin.svg" style="width:48px;height:48px" alt="linkedin icon">
         </a>
     </div>
     <div>
-        <a href="files/DesignCV.pdf" download>Download my CV</a>
+        <a href="files/DesignCV.pdf" class="button.contact" download>Download my CV</a>
     </div>
 </footer>
 </body>
