@@ -1,21 +1,20 @@
 /*
 Colors used:
-Primary Color (Tuorquise): 73, 205, 228, 100%
-Secondary Color (Jade): 0, 151, 178 100%
-Card Background Color (Tuorquise 6%): 73, 205, 228 6%
-Background Color (White): 255, 255, 255
-Text main (Black): 28, 27, 31, 100%
-Text secondary (Dark grey): 83, 84, 97 100%
-Ghost text (Mid grey): 83, 84, 97 70%
-83, 84, 97 50%
-Selected tab (light grey): 83, 84, 97 30%
-Unselected tab (v. light grey): 83, 84, 97 10%
+Primary Color (Tuorquise): 73, 205, 228, 100% #49CDE4
+Secondary Color (Jade): 0, 151, 178 100% #0097B2
+Card Background Color (Tuorquise 6%): 73, 205, 228 6% #49CDE4
+Background Color (White): 255, 255, 255 #ffffff
+Text main (Black): 28, 27, 31, 100% #000000
+Text secondary (Dark grey): 83, 84, 97 100% #535461
+Ghost text (Mid grey): 83, 84, 97 70% #535461
+Grey 83, 84, 97 50% #535461
+Selected tab (light grey): 83, 84, 97 30% #535461
+Unselected tab (v. light grey): 83, 84, 97 10% #535461
 Highlight (Navy): 8, 70, 109 100%, #08466D
 */
-body {
-    font-family: 'Nunito', sans-serif;
-  }
-  
+* {
+  box-sizing: border-box;
+} 
 body {
   background-color: #ffffff;
   font-family: 'Nunito', sans-serif;
@@ -24,20 +23,20 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
-
 h1, h2, h3, h4 {
   line-height: 1.4;
+  text-align: center;
+  position: relative;
+  display: inline-block
 }
 h1 {
   font-size: 2.75em;
   font-weight: 700;
 }
-
 h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
-
 h3 {
   font-size: 1.75em;
   font-weight: 400;
@@ -50,45 +49,87 @@ img {
   width: 100%;
 }
 a {
-  color: #49CDE4;
+  color: #000000;
   text-decoration: none; /* No underlining */
-}
-a:hover {
-  color: #535461;
-  text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
   color: #0097B2;
 }
-a:active { /* selected link */
-  color: #535461
-  0.3;
+a:hover {
+  color: #08466D;/* a:hover (mouse over) same styling as a:focus (selected by keyboard)*/
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
-a:hover,
+a:active { /* selected link */
+  color: #535461 0.3;
+}
 a:focus {
   color: #08466D;
   text-decoration: underline;
 }
-
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #49CDE4;
-  color: #ffffff; 
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #08466D; /* width of the border, type, color */
-  transition: 0.2s opacity;
+#hero {
+  text-align: center;
+  background-color: transparent;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%
+}
+#careerchanger {
+  text-align: center;
+  max-width: 50%;
+  display: inline;
+}
+#logo {
+  text-align: center;
+  max-width: 30%;
+}
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 0.625em;
+}
+nav > ul {
+  display: inline;
+  padding: 0;
+}
+nav > ul > li {
+  float: left;
+  list-style-type: none;
+}
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #535461;
+  width: 100%;
+}
+nav > ul > li > a:visited{
+  color: #0097B2;
+}
+nav > ul > li > a:hover{
+  color: #49CDE4;
+}
+nav > ul > li > a:active{
+  color: #535461 0.3;
+}
+ul > li {
+  list-style-type: none;
+}
+/* Layout stylings*/
+.container {
+  padding: 0 15px;
+}
+#work .row { 
+  padding-bottom: 25px; border-bottom: 1px solid #08466D; 
+  margin: 24px 20px; /* 24px top and bottom, 20 left and right */
 }
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.5; /* Reduces the opacity of the button to 50% */
   text-decoration: none;
 }
 .button:active {
-  color: #535461
-  0.3;
+  color: #535461 0.3;
 }
-.button.contact {
+.button:contact {
   background-color: transparent;
   color: #0097B2;
   text-transform: uppercase;
@@ -99,7 +140,16 @@ a:focus {
   color: #ffffff;
 }
 .button.contact:active {
-  background-color: #535461
-  0.3;
+  background-color: #535461  0.3;
   color: #ffffff;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #0097B2;
+  flex-wrap: 700;
+  color:black; 
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #08466D; /* width of the border, type, color */
+  margin-bottom: 24px;
 }
