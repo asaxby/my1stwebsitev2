@@ -1,5 +1,5 @@
 /*
-Colors used:
+Colors used: 
 Primary Color (Tuorquise): 73, 205, 228, 100% #49CDE4
 Secondary Color (Jade): 0, 151, 178 100% #0097B2
 Card Background Color (Tuorquise 6%): 73, 205, 228 6% #49CDE4
@@ -152,4 +152,7 @@ ul > li {
   border-radius: 3px;
   border-bottom: 2px solid #08466D; /* width of the border, type, color */
   margin-bottom: 24px;
+}
+.button:visited {
+  color: black;
 }
