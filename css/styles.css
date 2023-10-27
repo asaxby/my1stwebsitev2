@@ -122,12 +122,25 @@ ul > li {
   padding-bottom: 25px; border-bottom: 1px solid #08466D; 
   margin: 24px 20px; /* 24px top and bottom, 20 left and right */
 }
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #0097B2;
+  flex-wrap: 700;
+  color:black; 
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #08466D; /* width of the border, type, color */
+  margin-bottom: 24px;
+}
 .button:hover {
   opacity: 0.5; /* Reduces the opacity of the button to 50% */
   text-decoration: none;
 }
 .button:active {
   color: #535461 0.3;
+}
+.button:visited {
+  color: black;
 }
 .button:contact {
   background-color: transparent;
@@ -143,16 +156,5 @@ ul > li {
   background-color: #535461  0.3;
   color: #ffffff;
 }
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #0097B2;
-  flex-wrap: 700;
-  color:black; 
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #08466D; /* width of the border, type, color */
-  margin-bottom: 24px;
-}
-.button:visited {
-  color: black;
-}
+
+
