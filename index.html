@@ -19,26 +19,29 @@
     <title>Portfolio Site (Astrid Saxby)</title>
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <picture>
-          <source
-            srcset="img/aboutme/namelogosvg.svg"
-            style="width: 200px; height: 48px"
-          >
-          <img class="logo" src="img/aboutme/namelogosvg.svg" alt="logo" >
-        </picture>
-        <ul class="navigation">
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a href="cira.html">CIRA</a></li>
-          <li><a href="CChutbooking.html">CC Hut Booking</a></li>
-        </ul>
-      </nav>
-    </div>
+    <header>
+      <div class="container">
+        <nav>
+          <picture>
+            <source
+              srcset="img/portfolio/initiallogo.svg"
+              style="width: 212px; height: 321px"
+            >
+              <img class="logo" src="img/portfolio/initiallogo.svg" alt="logo" >
+          </picture>
+          <ul class="navigation">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="cira.html">CIRA</a></li>
+            <li><a href="CChutbooking.html">CC Hut Booking</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div>
       <div class="container">
         <h1 id="hero">I'm Astrid Saxby a UX / UI designer</h1>
+        <br>
         <p id="careerchanger">
           I’m based in the NE of England. As a former teacher, and now career
           changer I have always had a passion for making complex ideas
@@ -49,57 +52,82 @@
     <div id="work">
       <!--work section-->
       <div class="container">
-        <h2>CIRA - Climbers’ Injury Recovery App</h2>
-        <div>
-          <p>An app to help climbers quickly recover from injury</p>
-          <a
-            href="https://www.figma.com/file/thmF8MBlDfHwqVaMqTBe9T/CIRA-Notion?type=design&node-id=2416%3A1262&mode=design&t=4gk4AjNIgWpaNKD6-1"
-            class="button"
-            >See prototype</a
-          >
-        </div>
-        <div>
-          <picture>
-            <source
-              srcset="img/portfolio/cirabanner1200.svg"
-              media="(max-width:767px)"
-            >
-            <img src="img/portfolio/cirabanner600.svg" alt="CIRA banner" >
-          </picture>
-        </div>
-      </div>
-      <div class="container">
-        <h2>Climbers' Club Hut Booking App</h2>
-        <div>
-          <p>
-            An app to allow climbers to quickly book one of 8 Climbers’ Club
-            huts
-          </p>
-          <a
-            href="https://www.figma.com/file/thmF8MBlDfHwqVaMqTBe9T/CIRA-Notion?type=design&node-id=2416%3A1262&mode=design&t=4gk4AjNIgWpaNKD6-1"
-            class="button"
-            >See prototype</a
-          >
-        </div>
-        <div>
-          <picture>
-            <source
-              srcset="img/portfolio/counthouse.jpg"
-              media="(max-width:767px)"
-            >
-            <img src="img/portfolio/counthouse.jpg" alt="CC hut" >
-          </picture>
-        </div>
+        <h2>CIRA - Climbers’ Injury Recovery App</h2>  
+          <div class="row">
+            <div class="col-md-6 col-lg-7">       
+              <picture>
+                <source
+                  srcset="img/portfolio/cirabanner1200.svg"
+                  media="(max-width:767px)"
+                  >
+                <img src="img/portfolio/cirabanner600.svg" alt="CIRA banner" >
+              </picture>
+            </div>
+            <div class="container">
+              <div class="col-md-6 col-lg-5"> 
+                <p>An app to help climbers quickly recover from injury</p>
+                  <a
+                    href="https://www.figma.com/file/thmF8MBlDfHwqVaMqTBe9T/CIRA-Notion?type=design&node-id=2416%3A1262&mode=design&t=4gk4AjNIgWpaNKD6-1"
+                    class="button"
+                    >See prototype</a
+                  >
+              </div>
+            </div>
+          </div>
       </div>
     </div>
+    <div class="container">
+      <h2>Climbers' Club Hut Booking App</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-6"> 
+            <picture>
+              <source
+                srcset="img/portfolio/counthouse.jpg"
+                media="(max-width:767px)"
+              >
+              <img src="img/portfolio/counthouse.jpg" alt="CC hut">
+            </picture>
+          </div>         
+        <div class="container">
+          <div class="col-md-6 col-lg-6">
+            <p>
+              An app to allow climbers to quickly book one of 8 Climbers’ Club
+              huts
+            </p>
+            <a
+              href="https://www.figma.com/file/thmF8MBlDfHwqVaMqTBe9T/CIRA-Notion?type=design&node-id=2416%3A1262&mode=design&t=4gk4AjNIgWpaNKD6-1"
+              class="button"
+            >See prototype</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>     
+    <div class="container">
+      <h2 id="animationtrial">Animation Trial</h2>    <!--Animation-->
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="birds">
+              <picture>
+                <source
+                  srcset="img/animation/birdsdark.svg"
+                  media="(max-width:767px)"
+                >
+                <img src="img/animation/birdsdark.svg" alt="birds">
+              </picture>           
+            </div>
+          </div>
+        </div>
+      </div>
     <footer>
       <div class="container">
-        <h2 id="Contact">Contact</h2>
-        <br >
-        <h3>Get in touch</h3>
+          <h2 id="Contact">Contact</h2>
+          <br>
+          <h3>Get in touch</h3>
         <p>
           Do you like my work and would like to discuss opportunities? Please
-          get in touch. Call:<a href="tel:+447855768288">+44 7855 768288</a> .
+          get in touch. 
+          Call:<a href="tel:+447855768288">+44 7855 768288</a> .
           Prefer sending an email?
         </p>
       </div>
