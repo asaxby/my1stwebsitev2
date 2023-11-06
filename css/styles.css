@@ -89,21 +89,28 @@ a:focus {
 }
 header {
   background-color: #ffffff;
-  text-align: center;
   padding: 10px;
   margin: 10px;
+}
+.navtoggle li:not(:last-child) { /* To remove the menu items in small screen */
+    display: none;
+.navtoggle, .navtoggle.responsive {
+      position: relative;
+.navtoggle li .icon {
+        position: absolute;
+        right: 0;
+        top: 2px;
+      }
+    }    
+
 }
 #contact.h2 {
   padding: 0;
 }
-nav > ul {
-  display: inline-block;
-  padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
-
+nav > ul > {
   list-style-type: none;
+  padding: 0;
+
 }
 nav > ul > li > a {
   padding: 0 10px;
@@ -125,6 +132,7 @@ ul > li {
   margin: 0;
   padding: 0;
 }
+
 /* Layout stylings*/
 .container {
   padding: 0 15px;
@@ -175,12 +183,25 @@ ul > li {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+    .navtoggle li:not(:last-child) { /* Shows menu items and not hamburger in medium screens */
+      display: inline-block;
+    }
+    .navtoggle li:last-child {
+      display: none;
+    }
+    nav > ul {
+      margin: 1em 0;
+    }
   }
-  nav {
+  logo {
+    max-width: 20%;
+  }
+  nav > ul > li {
     width: 100%;
     display: inline-block;
     margin-top: 24px;
   }
+ 
   .col-md-6 {
     width: 50%;
     padding: 10px;

@@ -21,21 +21,19 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <picture>
-            <source
-              srcset="img/portfolio/initiallogo.svg"
-              style="width: 212px; height: 321px"
-            >
-              <img class="logo" src="img/portfolio/initiallogo.svg" alt="logo" >
-          </picture>
-          <ul class="navigation">
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="cira.html">CIRA</a></li>
-            <li><a href="CChutbooking.html">CC Hut Booking</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">          
+          <img class="logo" src="img/portfolio/initiallogo.svg" alt="logo" >
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="cira.html">CIRA</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <img src="img/portfolio/bars-solid.svg"
+                  style="width: 48px; height: 48px" alt="menu icon"></a></li>
+              </ul>
+            </nav>
+        </div>
       </div>
     </header>
     <div>
@@ -150,7 +148,7 @@
         >
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script> 
-    
   </body>
 </html>
