@@ -74,7 +74,7 @@ a:focus {
 #hero.h1 {
   text-align: center;
   background-color: transparent;
-  padding: 20px 0;
+  padding: 8px 0;
   display: block;
   width: 100%;
 }
@@ -85,34 +85,23 @@ a:focus {
 }
 .logo {
   max-width: 20%;
-  display: inline-block;
+  display: inline-display;
 }
 header {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 10px 0 4px;
   margin: 10px;
-}
-.navtoggle li:not(:last-child) { /* To remove the menu items in small screen */
-    display: none;
-.navtoggle, .navtoggle.responsive {
-      position: relative;
-.navtoggle li .icon {
-        position: absolute;
-        right: 0;
-        top: 2px;
-      }
-    }    
-
 }
 #contact.h2 {
   padding: 0;
 }
-nav > ul > {
+nav > ul > li {
   list-style-type: none;
   padding: 0;
-
+  line-height: 0.8;
 }
 nav > ul > li > a {
+  /*selects the list elements in the navigation class */
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
@@ -128,6 +117,38 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   color: #535461 0.3;
 }
+.navtoggle {
+  display: flex;
+  justify-content: space-between;
+}
+.navtoggle.responsive li:last-child {
+  display: none;
+  padding: 0 0 10px;
+}
+.navtoggle li:not(:last-child) {
+  /* To remove the menu items in small screen */
+  display: none;
+}
+
+.navtoggle.responsive nav {
+  position: relative;
+  padding: 24px 0 0;
+}
+.navtoggle li .icon {
+  position: relative;
+  padding-right: 0;
+  top: 2px;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  text-align: right;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 ul > li {
   margin: 0;
   padding: 0;
@@ -183,7 +204,8 @@ ul > li {
   header {
     text-align: unset;
     padding: 20px 0 13px;
-    .navtoggle li:not(:last-child) { /* Shows menu items and not hamburger in medium screens */
+    .navtoggle li:not(:last-child) {
+      /* Shows menu items and not hamburger in medium screens */
       display: inline-block;
     }
     .navtoggle li:last-child {
@@ -201,7 +223,7 @@ ul > li {
     display: inline-block;
     margin-top: 24px;
   }
- 
+
   .col-md-6 {
     width: 50%;
     padding: 10px;
