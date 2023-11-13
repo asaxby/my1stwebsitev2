@@ -146,6 +146,7 @@ nav > ul > li > a:active {
   font-size: 20px;
 }
 .navtoggle.responsive li {
+  /* Should toggle on the menu list */
   display: block;
   padding: 10px 0;
   text-align: right;
@@ -155,6 +156,7 @@ nav > ul > li > a:active {
   display: none;
   padding: 0 0 10px;
 }
+
 nav > ul {
   list-style-type: none;
   padding: 0;
