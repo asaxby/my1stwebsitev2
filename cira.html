@@ -13,40 +13,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    >
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <title>CIRA App (Astrid Saxby)</title>
+    <i class="fa-solid fa-bars"></i>
   </head>
   <body>
-    <header>
     <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <img class="logo2" src="img/cira/ciralogo.svg" alt="CIRA logo">
+      <picture>
+        <source
+          srcset="img/cira/ciralogo.svg"
+          style="width: 180px; height: 110px"
+          >
+          <img class="logo" src="img/cira/ciralogo.svg" alt="CIRA logo">
+        </picture>
       <nav>
-        <ul class="navigation">
+        <ul>
           <li><a href="index.html">Portfolio</a></li>
           <li><a href="about.html">About Me</a></li>
-          <li><a href="cira.html" >CIRA</a></li>
-          <li><a href="contactme.html">Contact me</a></li>
-          <li>
-            <a
-              href="javascript:void(0)"
-              class="icon"
-              onclick="menuToggle()">
-              <img
-                src="img/portfolio/bars-solid.svg"
-                style="width: 48px; height: 48px"
-                alt="menu icon">
-            </a>
-          </li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
-  </div>
-  </header>
-  <div>
-    <div class="container">
-      <h1>Climbers' Injury Recovery App</h1>
+    <div>
+      <div class="container">
+        <h1>
+          <span>Climbers' Injury Recovery App</span>
+        </h1>
         <picture>
           <source
             srcset="img/cira/cirabanner1200.svg"
@@ -151,37 +145,30 @@
     </div>
     <footer>
       <div class="container">
-        <h2>Contact details to discuss opportunities</h2>
-        <div class="col-md-3">
-          <h4 id="email">Email me</h4>
-            <div class="container">
-            <a href="mailto:astridsaxbyplus@gmail.com" class="button">Email me</a>
-            </div>
-        </div>
-        <div class="col-md-3">
-          <h4 id="phone">Call me</h4>
-            <div class="container">
-              <a href="tel:+447855768288" class="button">+44 7855 768288</a> 
-            </div>
-        </div>
-        <div class="col-md-3">
-          <h4 id="linkedin">Linkedin link</h4>
-          <div class="container">
-            <a href="https://www.linkedin.com/in/astridsaxby25" target="_blank">
-              <img
-                src="img/portfolio/icons8-linkedin.svg"
-                style="width: 48px; height: 48px"
-                alt="linkedin icon">
-            </a>
-          </div>
-        </div>
-      <div class="col-md-3">
-        <div class="container">
-          <h4 id="cv">My CV</h4>
-          <div class="container"></div>
-          <a href="files/DesignCV.pdf" class="button" download>Download CV</a>
-        </div>
+        <h2 id="Contact">Contact</h2>
+        <br>
+        <h3>Get in touch</h3>
+        <p>
+          Do you like my work and would like to discuss opportunities? Please
+          get in touch. Call:<a href="tel:+447855768288">+44 7855 768288</a> .
+          Prefer sending an email?
+        </p>
       </div>
+      <div class="container">
+        <a href="mailto:astridsaxbyplus@gmail.com" class="button">Email me</a>
+      </div>
+      <div class="container">
+        <a href="https://www.linkedin.com/in/astridsaxby25" target="_blank">
+          <img
+            src="img/portfolio/icons8-linkedin.svg"
+            style="width: 48px; height: 48px"
+            alt="linkedin icon">
+        </a>
+      </div>
+      <div class="container">
+        <a href="files/DesignCV.pdf" class="button.contact" download
+          >Download my CV</a
+        >
       </div>
     </footer>
   </body>

@@ -22,7 +22,6 @@ body {
   font-weight: 400; /* Sets the font weight to 400 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
-  padding: 10px;
 }
 h1,
 h2,
@@ -48,7 +47,6 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
-  text-align: left;
 }
 img {
   width: 100%;
@@ -86,14 +84,6 @@ a:focus {
   display: inline;
 }
 .logo {
-  max-width: 30%;
-  display: inline-display;
-}
-.logo2 {
-  max-width: 30%;
-  display: inline-display;
-}
-.profile {
   max-width: 20%;
   display: inline-display;
 }
@@ -102,9 +92,12 @@ header {
   padding: 10px 0 4px;
   margin: 10px;
 }
+#contact.h2 {
+  padding: 0;
+}
 nav > ul > li {
   list-style-type: none;
-  padding: 10px;
+  padding: 0;
   line-height: 0.8;
 }
 nav > ul > li > a {
@@ -112,11 +105,11 @@ nav > ul > li > a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffffff;
+  color: #535461;
   width: 100%;
 }
 nav > ul > li > a:visited {
-  color: #ffffff;
+  color: #0097b2;
 }
 nav > ul > li > a:hover {
   color: #49cde4;
@@ -125,62 +118,60 @@ nav > ul > li > a:active {
   color: #535461 0.3;
 }
 .navtoggle {
-  /* gives space between logo and menu*/
   display: flex;
   justify-content: space-between;
 }
+.navtoggle.responsive li:last-child {
+  display: none;
+  padding: 0 0 10px;
+}
 .navtoggle li:not(:last-child) {
   /* To remove the menu items in small screen */
-  background-color: white;
   display: none;
 }
+
 .navtoggle.responsive nav {
   position: relative;
   padding: 24px 0 0;
-  display: block;
 }
 .navtoggle li .icon {
   position: relative;
   padding-right: 0;
   top: 2px;
-  font-size: 20px;
 }
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   text-align: right;
 }
-.navtoggle.responsive li:last-child {
-  /*doesn't show hamburger when toggled*/
-  display: none;
-  padding: 0 0 10px;
-}
 nav > ul {
   list-style-type: none;
   padding: 0;
 }
+
 ul > li {
   margin: 0;
   padding: 0;
 }
+
 /* Layout stylings*/
 .container {
-  padding: 0 0px;
+  padding: 0 15px;
 }
 .row {
   /*line at the bottom of a section*/
-  padding-bottom: 10px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #08466d;
-  margin: 24px 0px; /* 24px top and bottom, 20 left and right */
+  margin: 24px 20px; /* 24px top and bottom, 20 left and right */
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default it needs to be changed to inline-block */
   background-color: #0097b2;
   font-weight: 400;
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 3px;
   border-bottom: 2px solid #08466d; /* width of the border, type, color */
   margin-bottom: 24px;
   transition: 0.2s opacity;
@@ -193,7 +184,7 @@ ul > li {
   color: #535461 0.3;
 }
 .button:visited {
-  color: white;
+  color: black;
 }
 .button:contact {
   background-color: transparent;
@@ -211,79 +202,47 @@ ul > li {
 }
 @media only screen and (min-width: 640px) {
   header {
-    text-align: right;
+    text-align: unset;
     padding: 20px 0 13px;
+    .navtoggle li:not(:last-child) {
+      /* Shows menu items and not hamburger in medium screens */
+      display: inline-block;
+    }
+    .navtoggle li:last-child {
+      display: none;
+    }
+    nav > ul {
+      margin: 1em 0;
+    }
   }
-  .navtoggle li:not(:last-child) {
-    /* Shows menu items and not hamburger in medium screens */
+  logo {
+    max-width: 20%;
+  }
+  nav > ul > li {
+    width: 100%;
     display: inline-block;
-    background-color: #08466d;
+    margin-top: 24px;
   }
-  .navtoggle li:last-child {
-    /* Hides hamburger menu*/
-    display: none;
+
+  .col-md-6 {
+    width: 50%;
+    padding: 10px;
   }
-  nav > ul {
-    margin: 1em 0;
+  #skills {
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 25px;
   }
-}
-logo {
-  max-width: 300px;
-}
-nav > ul > li {
-  width: 50%;
-  display: inline-block;
-  margin-top: 24px;
-}
-.col-md-6 {
-  width: 50%;
-  padding: 10px;
-}
-#skills {
-  margin-top: 0;
-  margin-bottom: 0px;
-  margin-left: 25px;
-  text-align: left;
-}
-#tools {
-  margin-top: 0;
-  margin-bottom: 0px;
-  margin-left: 25px;
-  text-align: left;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.col-md-3 {
-  width: 25%;
-  padding: 10px;
-}
-#email {
-  margin-top: 0;
-  margin-bottom: 0px;
-  margin-left: 0px;
-}
-#phone {
-  margin-top: 0;
-  margin-bottom: 0px;
-  margin-left: 0;
-}
-#linkedin {
-  margin-top: 0;
-  margin-bottom: 0px;
-  margin-left: 0px;
-}
-#cv {
-  margin-top: 0;
-  margin-bottom: 0px;
-  margin-left: 0px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+  #tools {
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 25px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 @media only screen and (min-width: 1024px) {
 }
