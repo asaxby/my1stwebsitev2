@@ -134,30 +134,28 @@ nav > ul > li > a:active {
   background-color: white;
   display: none;
 }
-.navtoggle.responsive {
-  position: relative;
-  padding: 24px 0 0;
-  display: block;
-}
 .navtoggle li .icon {
   position: relative;
   padding-right: 0;
   top: 2px;
   font-size: 20px;
 }
+.navtoggle.responsive {
+  position: relative;
+  padding: 24px 0 0;
+  display: block;
+}
+.navtoggle.responsive li {
+  /* Should toggle on the menu list */
+  display: inline-block;
+  padding: 10px 0;
+  text-align: right;
+}
 .navtoggle.responsive li:last-child {
   /*doesn't show hamburger when toggled*/
   display: none;
   padding: 0 0 10px;
 }
-.navtoggle.responsive li {
-  /* Should toggle on the menu list */
-  display: block;
-  padding: 10px 0;
-  text-align: right;
-}
-
-
 nav > ul {
   list-style-type: none;
   padding: 0;
