@@ -147,7 +147,7 @@ nav > ul > li > a:active {
 }
 .navtoggle.responsive li {
   /* Should toggle on the menu list */
-  display: inline-block;
+  display: block;
   padding: 10px 0;
   text-align: right;
 }
