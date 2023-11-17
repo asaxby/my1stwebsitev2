@@ -140,21 +140,22 @@ nav > ul > li > a:active {
   top: 2px;
   font-size: 20px;
 }
-.navtoggle.responsive {
+.navtoggle.responsive nav {
   position: relative;
-  padding: 24px 0 0;
-  display: block;
-}
+  top: 25px;
+} 
 .navtoggle.responsive li {
   /* Should toggle on the menu list */
   display: block;
   padding: 10px 0;
   text-align: right;
 }
-.navtoggle.responsive li:last-child {
+.navtoggle li:last-child {
   /*doesn't show hamburger when toggled*/
-  display: none;
   padding: 0 0 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 nav > ul {
   list-style-type: none;
