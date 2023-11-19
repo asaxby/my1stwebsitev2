@@ -124,39 +124,8 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   color: #535461 0.3;
 }
-.navtoggle {
-  /* gives space between logo and menu*/
-  display: flex;
-  justify-content: space-between;
-}
-.navtoggle li:not(:last-child) {
-  /* To remove the menu items in small screen */
-  background-color: white;
-  display: none;
-}
-.navtoggle li .icon {
-  position: relative;
-  padding-right: 0;
-  top: 2px;
-  font-size: 20px;
-}
-.navtoggle.responsive nav {
-  position: relative;
-  top: 25px;
-} 
-.navtoggle.responsive li {
-  /* Should toggle on the menu list */
-  display: block;
-  padding: 10px 0;
-  text-align: right;
-}
-.navtoggle li:last-child {
-  /*doesn't show hamburger when toggled*/
-  padding: 0 0 10px;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-}
+
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -211,17 +180,30 @@ ul > li {
   background-color: #535461 0.7;
   color: #ffffff;
 }
+.navtoggle{
+  /* gives space beteen logo and menu*/
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 320px){
+  .navtoggle li{
+  display: none;
+  }
+  .navtoggle.responsive .icon{
+    display: block;
+  }
+}
 @media only screen and (min-width: 640px) {
   header {
     text-align: right;
     padding: 20px 0 13px;
   }
-  .navtoggle li:not(:last-child) {
+  .navtoggle li {
     /* Shows menu items and not hamburger in medium screens */
     display: inline-block;
     background-color: #08466d;
   }
-  .navtoggle li:last-child {
+  .navtoggle .icon {
     /* Hides hamburger menu*/
     display: none;
   }

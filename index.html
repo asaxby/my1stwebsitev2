@@ -20,31 +20,22 @@
     <title>Portfolio Site (Astrid Saxby)</title>
   </head>
   <body>
-    <script>function menuToggle() {
-    var x = document.getElementById('myNavtoggle');
-    if (x.className === 'navtoggle') {
-        x.className += ' responsive';
-    } else {
-        x.className = 'navtoggle';
-    }
-  }</script>
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
           <img class="logo" src="img/portfolio/initiallogo.svg" alt="logo">
+          <a
+                href="javascript:void(0);"
+                class="icon"
+                onclick="menuToggle()">
+                <img src="img/portfolio/bars-solid.svg"
+                style="width: 48px; height: 48px" alt="menu icon"></a>
           <nav>
             <ul class="navigation">
               <li><a href="index.html">Portfolio</a></li>
               <li><a href="about.html">About Me</a></li>
               <li><a href="cira.html">CIRA</a></li>
               <li><a href="contactme.html">Contact me</a></li>
-              <li><a
-                href="javascript:void(0);"
-                class="icon"
-                onclick="menuToggle()">
-                <img src="img/portfolio/bars-solid.svg"
-                style="width: 48px; height: 48px" alt="menu icon"></a>
-            </li>
             </ul>
           </nav>
         </div>
