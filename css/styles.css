@@ -102,38 +102,6 @@ header {
   padding: 10px 0 4px;
   margin: 10px;
 }
-nav > ul > li {
-  list-style-type: none;
-  padding: 10px;
-  line-height: 0.8;
-}
-nav > ul > li > a {
-  /*selects the list elements in the navigation class */
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ffffff;
-  width: 100%;
-}
-nav > ul > li > a:visited {
-  color: #ffffff;
-}
-nav > ul > li > a:hover {
-  color: #49cde4;
-}
-nav > ul > li > a:active {
-  color: #535461 0.3;
-}
-
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-ul > li {
-  margin: 0;
-  padding: 0;
-}
 /* Layout stylings*/
 .container {
   padding: 0 0px;
@@ -180,24 +148,39 @@ ul > li {
   background-color: #535461 0.7;
   color: #ffffff;
 }
-.navtoggle{
+.topnav{
   /* gives space beteen logo and menu*/
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 320px){
-  /* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
+nav > ul > li {
+  list-style-type: none;
+  padding: 10px;
+  line-height: 0.8;
+  margin: 0;
+  padding: 0;
 }
-
+nav > ul > li > a {
+  /*selects the list elements in the navigation class */
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  width: 100%;
+}
+nav > ul > li > a:visited {
+  color: #ffffff;
+}
+nav > ul > li > a:hover {
+  color: #49cde4;
+}
+nav > ul > li > a:active {
+  color: #535461 0.3;
+}
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
-  display: none;
+  display: block;
 }
-
 /* Style navigation menu links */
 .topnav a {
   color: white;
@@ -206,41 +189,46 @@ ul > li {
   font-size: 17px;
   display: block;
 }
-
 /* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
+.topnav .icon {
+  background: none;
   display: block;
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
 }
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #04AA6D;
   color: white;
 }
+.topnav .icon {
+  /* Hides hamburger menu*/
+  display: block;
+  position: relative;
 }
+
+
 @media only screen and (min-width: 640px) {
   header {
     text-align: right;
     padding: 20px 0 13px;
   }
-  .navtoggle li {
-    /* Shows menu items and not hamburger in medium screens */
-    display: inline-block;
-    background-color: #08466d;
-  }
-  .navtoggle .icon {
-    /* Hides hamburger menu*/
+  .toggle{
     display: none;
   }
+  .topnav #myLinks {
+    display: block;
+  }
+  .topnav li {
+    /* Shows menu items and not hamburger in medium screens */
+    display: block;
+    background-color: #08466d;
+  }
+  .topnav .icon {
+    /* Hides hamburger menu*/
+    display: block;
+    position: relative;
+  } 
   nav > ul {
     margin: 1em 0;
   }
@@ -253,7 +241,7 @@ logo {
 }
 nav > ul > li {
   width: 50%;
-  display: inline-block;
+  display: block;
   margin-top: 24px;
 }
 .col-md-6 {
