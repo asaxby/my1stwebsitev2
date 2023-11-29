@@ -187,7 +187,7 @@ nav > ul > li > a:active {
 }
 .toggle .icon {
   /* Hides hamburger menu*/
-  display: block;
+  display: none;
   position: relative;
 }
 
@@ -311,7 +311,7 @@ nav > ul > li {
     transform: translateX(-100px);
   }
   50% {
-    transform: translateX(0px);
+    transform: translateX(20px);
   }
   to {
     transform: translateX(0px) scale(1.5);
